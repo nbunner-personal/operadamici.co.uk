@@ -1,0 +1,225 @@
+/* Main stylesheet for operadamici.co.uk */
+/* copyright N.Bunner, Apr 2009 */
+/* www.nigelbunner.co.uk */
+
+/* @group common */
+body, html, ul, li, dl, dt, dd, form, h1, h2 , h3, h4, h5, p, img {margin: 0; padding: 0;}
+ul, li, ul li {list-style-type: none;}
+
+body {background: #9a9b9f url(/images/backgrounds/body_back.jpg) repeat-x 0 0; font: 100.1% "Lucida Grande", Lucida, Verdana, sans-serif;}
+body, html {font-size: 100.1%; height: 100%; margin:0; padding:0;}
+ul, li {margin: 0; padding: 0;}
+a {text-decoration: none;}
+
+/* @end */
+
+/* @group Structure */
+#main_container {height: 100%; width: 100%;}
+#inner_container {background: url(/images/backgrounds/container_back.png) repeat-y 0 0; font-family: "Lucida Grande", Lucida, Verdana, sans-serif; margin: 0 auto; min-height: 100%; text-align: left; width: 1034px;}
+
+#content {float: left; min-height: 800px;  height: auto !important; height: 800px; margin: 0 37px; width: 960px;} /* background: #788389 url(/images/backgrounds/content_back.jpg) repeat-x 0 0;  */
+#content_inner {color: #fff; float: left; width: 960px;} /* min-height: 800px; height: auto !important; height: 800px;  */
+#content_footer {background: url(/images/backgrounds/content_footer.gif) no-repeat 0 100%; height: 12px; width: 721px;}
+
+#photos_col, #media_col {background-position: 0 0; background-repeat: no-repeat; min-height: 500px; height: auto !important; height: 500px; margin: 0 20px; float: left; width: 270px;}
+#text_col {margin-left: 310px; width: 610px;}
+#index_text_col {margin: 0 20px 2em;}
+
+/*body#links #photos_col {display: none;}
+body#links #text_col {margin-left: 80px;}*/
+
+#section_menu_col {float: right; width: 160px;}
+#section_text_col {margin: 0 180px 0 40px; position: relative;}
+
+div.section_inner {background-position: 0 0; background-repeat: no-repeat; padding: 160px 0 0 280px; position: relative;}
+div.made_to_measure {background-image: url(/images/backgrounds/what-we-do/inner_header-measure.jpg);}
+div.weddings {background-image: url(/images/backgrounds/what-we-do/inner_header-weddings.jpg);}
+div.corporate_events {background-image: url(/images/backgrounds/what-we-do/inner_header-corporate.jpg);} /* background-image: url(/images/photos/side_photos-marquee.jpg); min-height: 385px; height:  auto !important; height: 385px; padding-top: 20px; */
+div.hotel_residency {background-image: url(/images/backgrounds/what-we-do/inner_header-hotel.png);}
+
+div.off_the_peg {margin-left: 100px; padding: 30px 0 80px;}
+div.off_the_peg ul {background-position: 0 0; background-repeat: no-repeat; position: relative; width: 571px;}
+
+div.off_the_peg ul#top_list {background-image: url(/images/backgrounds/pegs1.png); height: 279px;}
+div.off_the_peg ul#mid_list {background-image: url(/images/backgrounds/pegs2.png); height: 291px;}
+div.off_the_peg ul#bot_list {background-image: url(/images/backgrounds/pegs1.png); height: 279px;}
+
+div.off_the_peg ul li {color: #272422; font: 0.8em/1.2em "Trebuchet MS", Verdana, Arial; position: absolute; text-align: center; width: 135px;}
+div.off_the_peg ul li strong {display: block; font: 1.4em Georgia, "Times New Roman", Times, serif;}
+
+div.off_the_peg ul#top_list li.item_1 {left: 35px; top: 150px;}
+div.off_the_peg ul#top_list li.item_2 {left: 215px; top: 150px;}
+div.off_the_peg ul#top_list li.item_3 {left: 390px; top: 150px;}
+
+div.off_the_peg ul#mid_list li.item_1 {left: 35px; top: 150px;}
+div.off_the_peg ul#mid_list li.item_2 {left: 215px; top: 160px;}
+div.off_the_peg ul#mid_list li.item_3 {left: 400px; top: 160px;}
+
+div.off_the_peg ul#bot_list li.item_1 {left: 35px; top: 150px;}
+div.off_the_peg ul#bot_list li.item_2 {left: 215px; top: 150px;}
+div.off_the_peg ul#bot_list li.item_3 {left: 390px; top: 150px;}
+
+
+/*body#home #photos_col {background-image: url(/images/photos/side_photos-marquee.jpg); padding-top: 390px;}*/
+body#home #photos_col {background-image: url(/images/photos/side_photos-groupshot.jpg); padding-top: 335px;}
+/*body#what #photos_col {background-image: url(/images/photos/side_photos-marquee2.jpg); padding-top: 260px;}*/
+body#contact #photos_col {background-image: url(/images/photos/side_photos-groupshot2.jpg); padding-top: 260px;}
+body#links #photos_col {background-image: url(/images/photos/side_photos-table.jpg); padding-top: 260px;}
+/*body#audio #photos_col {background-image: url(/images/photos/side_photos-phantom.jpg); padding-top: 264px;}*/
+
+#footer {background: url(/images/backgrounds/container_back.png) repeat-y 50% 0; clear: left; text-align: center;} /* clear: left; min-height: 225px; height: auto !important; height: 225px; width: 100%; */
+#footer_inner {background: #647b81 url(/images/backgrounds/footer_back.jpg) no-repeat 50% 0; min-height: 170px; height: auto !important; height: 170px; margin: 0 auto; position: relative; width: 960px;}
+
+#header {background: url(/images/backgrounds/header_back.jpg) no-repeat 0 0; height: 189px; margin: 0 37px; position: relative; width: 960px;}
+#header h2 a {background-image: url(/images/logos/header_logo.png); display: block; height: 123px; left: 10px; position: absolute; top: 32px; width: 273px;}
+#header .search_options {bottom: 0; padding: 0 0 10px; position: absolute; right: 4px; width: 280px;}
+#header h3 {color: #363d36; font-size: 0.7em; margin-left: 20px;}
+
+#banner_photos {background: url(/images/backgrounds/header_photos_back.jpg) no-repeat 0 0; height: 108px; left: 312px; position: absolute; top: 45px; width: 640px;}
+
+#audio_container {border-right: 1px solid #BFC3D4; float: left; margin-right: 40px; padding: 0 40px 200px 0; width: 380px;}
+
+/* @end */
+
+
+/* @group Text  and links and lists */
+
+a:link, a:visited {color: #37abd5; text-decoration: none;} /* 37abd5 */
+a:hover {text-decoration: underline;}
+
+a img {border: none;}
+
+a.toplink {display: block; font-size: 0.8em; margin: 1em 0; text-align: center;}
+
+h1, h2, h3, h4, dt {color: #cedae1; font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal;}
+h1 {font-size: 1.3em; letter-spacing: 2px; margin: 1em 0 0; padding-bottom: 5px;} /* border-bottom: 1px solid #697074; padding-bottom: 7px; */
+h2.past_gigs_heading {font-size: 1.2em; margin-top: 2.5em;}
+/*.what-we-do h1 {background-position: 0 50%; background-repeat: no-repeat; font-size: 1.1em; padding: 70px 0 70px 60px;}*/
+div.section_inner h1 {color: #fff; left: 40px; top: 81px; position: absolute;}
+div.hotel_residency h1 {position: static;}
+body#audio h2 {letter-spacing: 1px; margin: 0.5em 0; font: 1.1em "Lucida Grande", Lucida, Verdana, sans-serif;}
+p {color: #cedae1; line-height: 1.5em; font-size: 0.8em; letter-spacing: 1px; margin: 0 0 1em;}
+.section_inner p {margin-right: 50px;}
+p.quotes, .section_inner p.quotes {color: #B1BCC2; margin: 0 20px 3em 10px; text-align: center; font: italic 0.9em/1.5em Georgia, "Times New Roman", Times, serif;}
+body#education p.quotes {font-size: 0.7em; margin: 3em 20px 2em;}
+p.quotes em {display: block; font-size: 0.8em; font-style: normal;  line-height: 1.3em; margin-top: 0.5em; text-align: right;}
+#section_text_col #quotes_container {font-size: 0.9em; left: 10px; top: 160px; position: absolute; width: 240px;}
+
+#index_text_col ul.sections, ul.content_list {font-size: 0.8em; margin-left: 20px;}
+#index_text_col ul.sections li, ul.content_list li {color: #cedae1; letter-spacing: 1px; margin: 0 0 2em;}
+#index_text_col ul.sections li em {color: #fff;}
+#index_text_col ul.sections li em a {display: block; font-size: 0.8em; padding-top: 4px; text-align: right;}
+#index_text_col ul.sections li {background-position: 0 0; background-repeat: no-repeat; padding: 10px 0 20px 120px; margin-right: 40px; min-height: 55px; height: auto !important; height: 95px;}
+
+#index_text_col ul.sections li#sections-peg {background-image: url(/images/backgrounds/what-we-do/what_icons-peg.jpg);}
+#index_text_col ul.sections li#sections-measure {background-image: url(/images/backgrounds/what-we-do/what_icons-measure.jpg);}
+#index_text_col ul.sections li#sections-weddings {background-image: url(/images/backgrounds/what-we-do/what_icons-weddings.jpg);}
+#index_text_col ul.sections li#sections-corporate {background-image: url(/images/backgrounds/what-we-do/what_icons-corporate.jpg);}
+#index_text_col ul.sections li#sections-hotel {background-image: url(/images/backgrounds/what-we-do/what_icons-hotel.png);}
+
+#section_menu_col ul.sections {font-size: 0.8em; margin: 2em 0 1em;}
+#section_menu_col ul.sections li {margin: 5px 0; padding-left: 8px;}
+#section_menu_col ul.sections li.list_heading {background-image: none; margin: 0; padding: 0;}
+#section_menu_col ul.sections li h3 {border-bottom: 1px solid #78787c; padding-bottom: 3px;}
+#section_menu_col ul.sections li a {border-bottom: 1px solid #4b4e51; border-left: 1px solid #4b4e51; color: #A8B2B8; display: block; font-size: 0.8em; font-weight: normal; letter-spacing: 1px; padding: 3px 2px 3px 6px;}
+#section_menu_col ul.sections li a:hover {color: #fafafa; text-decoration: none;}
+
+body.peg #section_menu_col ul.sections li a#menu-peg, body.measure #section_menu_col ul.sections li a#menu-measure, body.weddings #section_menu_col ul.sections li a#menu-weddings, body.corporate #section_menu_col ul.sections li a#menu-corporate, body.hotel #section_menu_col ul.sections li a#menu-hotel  {color: #fafafa;}
+
+#section_text_col ul {font-size: 0.9em;}
+
+ul.off_peg_list {margin: 1em 0;}
+ul.off_peg_list li {margin: 10px 20px;}
+
+#media_col ul {margin: 1em 0;}
+#media_col ul li {margin: 0 10px;}
+
+body#events #text_col dl {font-size: 0.8em; margin: 1em 0;}
+body#events #text_col dl dt {font-weight: bold; letter-spacing: 1px; margin-bottom: 0.2em;}
+body#events #text_col dl dd {line-height: 1.4em; margin: 0 0 1.5em;}
+
+/* header links */
+#header ul {background: url(/images/buttons/header_nav.png) repeat-x 0 0; bottom: 0; font-family: Arial, Helvetica, Geneva, sans-serif; left: 0; border-bottom: 1px solid #c3cfc3; border-top: 1px solid #494949; position: absolute; vertical-align: baseline; width: 960px;} /* width: 970px; */
+#header ul li {float: left; font-size: 0.6em; list-style-type: none;}
+#header ul li a:link, #header ul li a:visited {border-right: 1px solid #494949; color: #000; float: left; display: block;  letter-spacing: 1px; padding: 4px 10px; text-decoration: none; text-align: left;}
+#header ul li a:hover {background: url(/images/buttons/header_nav-over.png) repeat-y 0 0;} /* background: #bcccd9; */
+#header ul li a:active {} /* bdced8 */
+
+
+body#home #header a#tab_about, body#what #header a#tab_what, body#availability #header a#tab_availability, body#audition #header a#tab_audition, body#contact #header a#tab_contact, body#audio #header a#tab_audio, body#education #header a#tab_education, body#events #header a#tab_events {background: url(/images/buttons/header_nav-on.png) no-repeat 0 0; color: #fff;} /* f4f9f8 */
+
+
+/* footer links */
+#footer_inner ul {background: url(/images/logos/footer_logo.png) no-repeat 0 5px; font-size: 0.6em; float: left; margin: 0 5px 0 508px; padding: 20px 0 5px 210px; text-align: left;}
+#footer_inner ul li {padding: 2px 0;}
+#footer_inner ul li a {color: #cedae1; letter-spacing: 1px; line-height: 1.3em;}
+
+dl.display_address { font: 0.8em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; margin: 1em 0;}
+dl.display_address dt {color: #fff; font: 1.1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
+dl.display_address dd {padding: 0 0 0 20px;}
+
+
+
+/* @end */
+
+
+/* @group Form Stuff */
+
+/* search form in header */
+#header .search_options select, #header .search_options input#search {margin: 0 0 4px 20px;}
+#header .search_options select {width: 130px;}
+#header .search_options input#search {width: 235px;}
+
+button.header_submit_button {background: url(/images/buttons/search_button.png) no-repeat 50% 50%; border: none;  height: 29px;  margin-left: 148px; width: 119px;}
+button.header_submit_button:hover {background-image: url(/images/buttons/search_button-over.png);}
+button.header_submit_button span {display: block; padding-bottom: 4px; font-family: Arial, Helvetica, Geneva, sans-serif; letter-spacing: 1px;}
+
+label {display: block; font-size: 0.7em;}
+
+#content_inner div.form_row, #content_inner div.form_row_textarea {padding: 7px 0; width: 480px;}
+#content_inner div.form_row label, #content_inner div.form_row_textarea label {color: #534844; display: block; float: left; width: 220px; font: bold 11px "Lucida Grande", Lucida, Verdana, sans-serif; letter-spacing: 1px; text-align: right; padding-right: 4px;} 
+#content_inner div.form_row_button {text-align: right;}
+#order_form td input, #content_inner .form_row input, #content_inner .form_row_textarea textarea, #content_inner .form_row textarea {background: #fff; border: 3px solid #cacaca;} 
+#content_inner div.form_row_textarea textarea {height: 180px; width: 220px;}
+.date_of_birth_container {visibility: hidden;}
+
+form.enquiry_form {width: 22;}
+form.enquiry_form input, form.enquiry_form textarea {border: 2px solid #cacaca; margin: 0 0 0.5em; width: 220px;}
+form.enquiry_form textarea {height: 60px;}
+
+span.input_box {background: #85D48C; color: #333; display: block; font-size: 0.8em; margin: 0.5em 0; padding: 4px 0; text-align: center; width: 220px;}
+
+.date_of_birth_container input {background: #e8ebf1; border: 1px solid #e8ebf1;}
+.date_of_birth_container label {color: #e8ebf1; font-size: 0.7em;}
+/* @end */
+
+
+/* @group sneaky stuff */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+
+
+/* css background image replacement */
+.image_replace {display:-moz-inline-box; display: inline-block; background:transparent none  0 0 no-repeat; text-indent:-3000px; font:0/0 Arial; overflow:hidden; color:rgba(255,255,255,0); vertical-align:bottom;} /*  text-indent set to 0 elsewhere for both IE6 & IE7 */
+
+/* @end */
+
+/* @group home page photos */
+.homepage_photos {}
+.homepage_photos a {margin: 0 0 80px;}
+#homepage_photo-1 {background-image: url(/images/homepage/nagra.jpg); height: 121px; width: 268px;}
+#homepage_photo-2 {background-image: url(/images/homepage/ad147.jpg); height: 205px; width: 245px;}
+#homepage_photo-3 {background-image: url(/images/homepage/cinela.jpg); height: 166px; width: 252px;}
+
+/* @end */
+
+
+
+
+
+

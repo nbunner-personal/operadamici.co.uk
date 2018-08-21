@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	{% include head.html %}
+</head>
+{% if page.body_id %}
+	<body id="{{ page.body_id }}" class="{{ page.body_class }}">
+{% else %}
+	<body class="{{ page.body_class }}">
+{% endif %}
+<div id="main_container">
+	<div id="inner_container" class="clearfix">
+		<div id="header">
+			<h2 class="image_replace"><a href="/">Opera d'Amici</a></h2>
+			<ul>
+				<li><a href="/" id="tab_about"><span>About Us</span></a></li>
+				<li><a href="/what-we-do/index.html" id="tab_what"><span>What We Do</span></a></li>
+				<li><a href="/contact-us.html" id="tab_contact" rel="nofollow"><span>Contact Us</span></a></li>
+				<li><a href="/education.html" id="tab_education"><span>Education</span></a></li> 
+			</ul>
+			<div id="banner_photos">
+				<a href="/images/photos/fullsize_photo-01.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-01.jpg" width="101" height="100" alt="photo" /></a>
+				<a href="/images/photos/fullsize_photo-02.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-02.jpg" width="101" height="100" alt="photo" /></a>
+				<a href="/images/photos/fullsize_photo-03.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-03.jpg" width="101" height="100" alt="photo" /></a>
+				{% if page.body_id == 'home' %}
+					<a href="/images/photos/fullsize_photo-04a.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-04a.jpg" width="101" height="100" alt="photo" /></a>				
+				{% else %}
+					<a href="/images/photos/fullsize_photo-04.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-04.jpg" width="101" height="100" alt="photo" /></a>
+				{% endif %}
+				<a href="/images/photos/fullsize_photo-05.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-05.jpg" width="101" height="100" alt="photo" /></a>
+				<a href="/images/photos/fullsize_photo-06.jpg" rel="lightbox[banner_photos]"><img src="/images/photos/banner_photos-06.jpg" width="101" height="100" alt="photo" /></a>			
+			</div>
+		</div>
+		<div id="content">
+			<a name="topofpage">&nbsp;</a>	
+			<div id="content_inner">
+				<div id="photos_col">
+					{% if page.quote %}
+					{% assign quote = site.data.quotes[page.quote] %}
+					<p class="quotes">
+						{{ quote.quote }}
+						<em>{{ quote.credit }}</em>
+					</p>				
+					{% endif %}	
+				</div>
+				<div id="text_col" class="clearfix">
+					{{ page.title }}
+					{{ content }}		
+					
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer_inner">
+			<ul>
+				<li><a href="/">About Us</a></li>
+				<li><a href="/what-we-do/index.html">What We Do</a></li>
+				<li><a href="/contact-us.html" rel="nofollow">Contact Us</a></li>
+				<li><a href="/education.html">Education</a></li>
+				<li><a href="/links.html" rel="nofollow">Links</a></li> 
+			</ul>
+			
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="/javascript/prototype.js"></script>
+<script type="text/javascript" src="/javascript/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/javascript/lightbox/lightbox.js"></script>
+{% if page.useGreybox %}
+	<script type="text/javascript">
+	    var GB_ROOT_DIR = "http://www.robintyndale.co.uk/javascript/greybox/";
+	</script>
+	<script type"text/javascript" src="/javascript/greybox/AJS.js"></script>
+	<script type"text/javascript" src="/javascript/greybox/AJS_fx.js"></script>
+	<script type"text/javascript" src="/javascript/greybox/gb_scripts.js"></script>
+	<link href="/javascript/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
+{% endif %}
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5056119-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
